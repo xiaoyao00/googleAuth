@@ -8,12 +8,20 @@ import { Provider } from 'react-redux';
 
 const path = window.location.pathname;
 ReactDOM.render(
-	<React.StrictMode>
+	<div style={{
+        position: 'absolute', left: '50%', top: '10%',
+        transform: 'translate(-50%, -50%)'
+    }}>
+
+	
+	<React.StrictMode >
 		<Provider store={store}>
 			<App path={path} />
 		</Provider>
-	</React.StrictMode>,
+	</React.StrictMode>
+</div>,
 	document.getElementById('root')
+	
 );
 
 // If you want your app to work offline and load faster, you can change

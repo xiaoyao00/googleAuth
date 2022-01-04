@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
 import Login from './components/Login';
-import Logout from './components/Logout';
 import Test from './components/Test';
-import LoginHooks from './components/LoginHooks';
-import LogoutHooks from './components/LogoutHooks';
-import {
-	BrowserRouter,
-	Routes,
-	Route,
-	Navigate,
-	useLocation,
-} from 'react-router-dom';
+//import LoginHooks from './components/LoginHooks';
+//import LogoutHooks from './components/LogoutHooks';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import MainPage from './components/MainPage';
 
 function App(props) {
 	const isAuth = useSelector((state) => state.auth.isAuth);
@@ -23,8 +17,8 @@ function App(props) {
 			<BrowserRouter>
 				<Routes>
 					<Route exact path='/' element={<Login />}></Route>
-					<Route exact path='/test' element={<Test />}></Route>
-					<Route exact path='/logout' element={<Logout />}></Route>
+					<Route exact path='/test/:id' element={<Test />}></Route>
+					<Route path='/main' element={<MainPage />}></Route>
 				</Routes>
 			</BrowserRouter>
 		);
