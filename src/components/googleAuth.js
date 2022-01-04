@@ -18,4 +18,5 @@ const googleAuth = async (token) => {
 	return { userId, email, name, picture };
 };
 
-module.exports = googleAuth;
+//module.exports = googleAuth;
+export default googleAuth;
