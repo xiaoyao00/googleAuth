@@ -3,16 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "npm": "5.7.1",
-    "node": "9.5.0"
-  },
-  "proxy": {
-    "/api": {
-      "target": "https://google-authentication-react.herokuapp.com",
-      "pathRewrite": {
-        "^/api": "/"
-      }
-    }
+    "npm": "8.1.2",
+    "node": "16.13.1"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",

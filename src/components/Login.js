@@ -45,6 +45,7 @@ function Login(props) {
 
 	return (
 		<div>
+			<h1>google login</h1>
 			<GoogleLogin
 				clientId={clientId}
 				buttonText='Login'
