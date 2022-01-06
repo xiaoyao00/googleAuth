@@ -1,5 +1,3 @@
 # React Google authentication demo
 
-[Live Demo]()
-
-Refer this [blog]() for documentation.
+[Live Demo](https://google-login-all.herokuapp.com/)
